@@ -1,4 +1,8 @@
-# File and Directory Commands
+# Linux Command Cheat Sheet
+Welcome to the ultimate cheat sheet for essential **Linux** commands.
+This repository is designed to help developers, sysadmins, and DevOps engineers quickly recall the most commonly used terminal commands.
+
+## File and Directory Commands
 | Command | Description |
 |--------|-------------|
 | `ls` | Lists files and directories in the current directory. Use `ls -l` for long listing format. |
@@ -14,7 +18,7 @@
 | `find <path> -name <filename>` | Searches for files and directories by name under the given path. |
 | `tree` | Displays directory structure in a tree-like format. (Needs to be installed.) |
 
-# File Content Commands
+## File Content Commands
 | Command | Description |
 |--------|-------------|
 | `cat <file>` | Displays the contents of a file. |
@@ -27,7 +31,7 @@
 | `grep <pattern> <file>` | Searches for a pattern in a file. Use `grep -r` to search recursively. |
 | `diff <file1> <file2>` | Compares two files line by line. |
 
-# File Permission & Ownership
+## File Permission & Ownership
 | Command | Description |
 |--------|-------------|
 | `chmod +x <file>` | Adds execute permission to a file. |
@@ -35,7 +39,7 @@
 | `chown <user>:<group> <file>` | Changes file owner and group. |
 | `ls -l` | Shows detailed file permissions. |
 
-# Process Management
+## Process Management
 | Command | Description |
 |--------|-------------|
 | `ps` | Lists running processes. Use `ps aux` for detailed info. |
@@ -46,7 +50,7 @@
 | `pkill <name>` | Kills processes by name. |
 | `nice`, `renice` | Starts/changes process priority. |
 
-# User Management
+## User Management
 | Command | Description |
 |--------|-------------|
 | `whoami` | Displays current user. |
@@ -56,7 +60,7 @@
 | `su <user>` | Switches to another user. |
 | `sudo <command>` | Runs a command as root/superuser. |
 
-# Disk & Storage
+## Disk & Storage
 | Command | Description |
 |--------|-------------|
 | `df -h` | Shows disk space usage in human-readable format. |
@@ -66,7 +70,7 @@
 | `lsblk` | Lists block devices (like hard drives). |
 | `fdisk -l` | Shows partition table (needs sudo). |
 
-# Networking
+## Networking
 | Command | Description |
 |--------|-------------|
 | `ping <host>` | Checks network connectivity. |
@@ -78,7 +82,7 @@
 | `scp <src> <user>@<host>:<dest>` | Securely copies files between machines. |
 | `ssh <user>@<host>` | Connects to a remote server via SSH. |
 
-# System Information
+## System Information
 | Command | Description |
 |--------|-------------|
 | `uname -a` | Shows system information. |
@@ -88,7 +92,7 @@
 | `hostname` | Displays system hostname. |
 | `dmesg` | Shows boot and kernel messages. |
 
-# Package Management (Debian-based systems like Ubuntu)
+## Package Management (Debian-based systems like Ubuntu)
 | Command | Description |
 |--------|-------------|
 | `apt update` | Updates package list. |
@@ -97,14 +101,14 @@
 | `apt remove <package>` | Removes a package. |
 | `dpkg -i <package>.deb` | Installs a `.deb` package manually. |
 
-# Package Management (RHEL/CentOS)
+## Package Management (RHEL/CentOS)
 | Command | Description |
 |--------|-------------|
 | `yum install <package>` | Installs a package. |
 | `yum remove <package>` | Removes a package. |
 | `yum update` | Updates all packages. |
 
-# Archive & Compression
+## Archive & Compression
 | Command | Description |
 |--------|-------------|
 | `tar -cvf file.tar <dir>` | Creates a tar archive. |
@@ -115,7 +119,7 @@
 | `zip <file.zip> <file>` | Zips a file. |
 | `unzip <file.zip>` | Extracts a zip file. |
 
-# Miscellaneous
+## Miscellaneous
 | Command | Description |
 |--------|-------------|
 | `history` | Shows command history. |
