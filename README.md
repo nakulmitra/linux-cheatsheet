@@ -31,6 +31,125 @@ This repository is designed to help developers, sysadmins, and DevOps engineers 
 | `grep <pattern> <file>` | Searches for a pattern in a file. Use `grep -r` to search recursively. |
 | `diff <file1> <file2>` | Compares two files line by line. |
 
+## How to Create a File in Linux
+| Command | Description |
+|---------|-------------|
+| `touch filename` | Creates a new empty file. |
+| `> filename` | Also creates a new empty file (overwrites if it exists). |
+| `vim filename` | Opens the file in Vim (creates it if it doesn't exist). |
+
+## How to Edit a File in Linux
+1. Use `vim filename` to open the file.
+2. Press `i` to enter **Insert Mode**.
+3. Make your changes.
+4. Press `Esc` to return to **Normal Mode**.
+5. Use `:w` to **save**, `:q` to **quit**, or `:wq` to **save and quit**.
+
+## VI/Vim Editor Shortcuts
+
+### How to Delete a Line in a File
+| Command | Description |
+|---------|-------------|
+| `dd` | Delete current line |
+| `ndd` | Delete next `n` lines |
+| `d$` | Delete from cursor to end of line |
+
+### How to Undo in Vim
+| Command | Description |
+|---------|-------------|
+| `u` | Undo last change |
+| `U` | Undo all changes on the current line |
+| `Ctrl + r` | Redo the undone changes |
+
+### How to Replace or Append to a File in Linux
+| Command | Description |
+|---------|-------------|
+| `vim filename` | Open file in editor |
+| `:set paste` | (optional) Turn on paste mode |
+| `i` or `a` | Insert/append content |
+| `:w` | Save file |
+| `:r filename2` | Append contents of `filename2` into the current file |
+
+### Search a Word or String in Vim
+| Command | Description |
+|---------|-------------|
+| `/word` | Search **forward** for "word" |
+| `?word` | Search **backward** for "word" |
+| `n` | Go to next match |
+| `N` | Go to previous match |
+
+### Save and Exit in Vim
+| Command | Description |
+|---------|-------------|
+| `:w` | Save the file |
+| `:wq` or `ZZ` | Save and exit |
+| `:x` | Save and exit (only if changes exist) |
+
+### Exit Without Saving in Vim
+| Command | Description |
+|---------|-------------|
+| `:q!` | Quit without saving changes |
+
+## Cursor Navigation in Vim
+
+### Go to Start or End of a Line
+| Command | Description |
+|---------|-------------|
+| `0` | Move to **beginning** of the line (column 0) |
+| `^` | Move to **first non-whitespace** character in the line |
+| `$` | Move to the **end** of the current line |
+
+## Add a Line Before or After Current Line
+
+To **add a new line** while in Normal Mode:
+
+| Command | Description |
+|---------|-------------|
+| `o` | Open a new line **below** the current line and enter Insert Mode |
+| `O` | Open a new line **above** the current line and enter Insert Mode |
+
+> Tip: After adding the new line, type your content and press `Esc` to return to Normal Mode.
+
+## Replace Text Using Vim
+| Command | Description |
+|---------|-------------|
+| `:s/old/new/` | Replace first occurrence of `old` with `new` in current line |
+| `:s/old/new/g` | Replace all occurrences in current line |
+| `:%s/old/new/g` | Replace all occurrences in the file |
+| `:%s/old/new/gc` | Replace all occurrences with confirmation prompt |
+
+## Cut, Copy & Paste in Vim
+
+### Cut (Delete and store in buffer)
+| Command | Description |
+|---------|-------------|
+| `dd` | Cut (delete) a line |
+| `ndd` | Cut `n` lines |
+| `dG` | Cut until end of file |
+
+### Copy
+| Command | Description |
+|---------|-------------|
+| `yy` | Copy a line |
+| `nyy` | Copy `n` lines |
+| `yG` | Copy until end of file |
+
+### Paste
+| Command | Description |
+|---------|-------------|
+| `p` | Paste **after** the cursor/line |
+| `P` | Paste **before** the cursor/line |
+
+## File Comparison Using Vim (`vimdiff`)
+| Command | Description |
+|---------|-------------|
+| `vimdiff file1 file2` | Open both files side by side with differences highlighted |
+| `:diffupdate` | Refresh the diff view |
+| `do` | Get changes from the other file |
+| `dp` | Put changes into the other file |
+| `]c` / `[c` | Jump to next/previous change |
+| `:qa` | Quit all when done comparing |
+
 ## File Permission & Ownership
 | Command | Description |
 |--------|-------------|
