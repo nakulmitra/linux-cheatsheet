@@ -90,8 +90,6 @@ This repository is designed to help developers, sysadmins, and DevOps engineers 
 |---------|-------------|
 | `:q!` | Quit without saving changes |
 
-## Cursor Navigation in Vim
-
 ### Go to Start or End of a Line
 | Command | Description |
 |---------|-------------|
@@ -100,9 +98,6 @@ This repository is designed to help developers, sysadmins, and DevOps engineers 
 | `$` | Move to the **end** of the current line |
 
 ## Add a Line Before or After Current Line
-
-To **add a new line** while in Normal Mode:
-
 | Command | Description |
 |---------|-------------|
 | `o` | Open a new line **below** the current line and enter Insert Mode |
@@ -117,6 +112,31 @@ To **add a new line** while in Normal Mode:
 | `:s/old/new/g` | Replace all occurrences in current line |
 | `:%s/old/new/g` | Replace all occurrences in the file |
 | `:%s/old/new/gc` | Replace all occurrences with confirmation prompt |
+
+## How to Show Line Numbers in Vim
+If line numbers aren't visible, you can enable them in Normal Mode:
+
+| Command | Description |
+|---------|-------------|
+| `:set number` or `:set nu` | Show line numbers |
+| `:set relativenumber` | Show **relative** line numbers (useful for jumping lines with `d5j`, etc.) |
+| `:set nonumber` | Hide line numbers |
+| `:set norelativenumber` | Hide relative numbers |
+
+> To make line numbers always show, add `set number` to your `~/.vimrc` file.
+
+## How to Enable Syntax Highlighting (Colored Text)
+To turn on color-based syntax highlighting for code/configs:
+
+| Command | Description |
+|---------|-------------|
+| `:syntax on` | Enable syntax highlighting |
+| `:syntax off` | Disable syntax highlighting |
+
+> For permanent syntax highlighting, add this to your `~/.vimrc`:
+```
+syntax on
+```
 
 ## Cut, Copy & Paste in Vim
 
@@ -149,6 +169,15 @@ To **add a new line** while in Normal Mode:
 | `dp` | Put changes into the other file |
 | `]c` / `[c` | Jump to next/previous change |
 | `:qa` | Quit all when done comparing |
+
+## Switching Between Files in `vimdiff`
+When we're using `vimdiff file1 file2`, both files open side-by-side. Here's how to switch and manage between them:
+
+| Command | Description |
+|---------|-------------|
+| `Ctrl + w h` | Move to the **left** split (file1) |
+| `Ctrl + w l` | Move to the **right** split (file2) |
+| `Ctrl + w w` | Toggle between splits |
 
 ## File Permission & Ownership
 | Command | Description |
