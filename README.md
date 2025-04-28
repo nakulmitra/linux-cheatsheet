@@ -15,6 +15,7 @@ This repository is designed to help developers, sysadmins, and DevOps engineers 
 - [File Comparison Using Vim (`vimdiff`)](FileComparison.md)
 - [Switching Between Files in `vimdiff`](SwitchingBetweenFiles.md)
 - [`grep` Command](grepCommands.md)
+- [`find` Commnad](findCommand.md)
 - [File Permission & Ownership](FilePermission&Ownership.md)
 - [Process Management](ProcessManagement.md)
 - [User Management](UserManagement.md)
