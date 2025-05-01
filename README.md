@@ -26,6 +26,7 @@ This repository is designed to help developers, sysadmins, and DevOps engineers 
 - [Package Management (RHEL/CentOS)](PackageManagementRHEL&CentOS.md)
 - [Archive & Compression](Archive&Compression.md)
 - [Miscellaneous](Miscellaneous.md)
+- [Linux Terminal Tips & Tricks](linux-terminal-tips.md)
 
 ## YouTube playlists
 * [Java Tutorial Series](https://www.youtube.com/playlist?list=PLKrxcqbQdCgZDkAiCs6uGFK7yzhFkjNJU)
