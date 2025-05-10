@@ -21,7 +21,7 @@ This repository is designed to help developers, sysadmins, and DevOps engineers 
 - [Access Control List (ACL)](ACL.md)
 - [Process Management](ProcessManagement.md)
 - [User Management](UserManagement.md)
-- [Disk & Storage](Disk&Storage.md)
+- [Disk Space Monitoring & Disk Management Commands](Disk&Storage.md)
 - [Networking](Networking.md)
 - [System Information](SystemInformation.md)
 - [Package Management (Debian-based systems like Ubuntu)](PackageManagementUbuntu.md)
